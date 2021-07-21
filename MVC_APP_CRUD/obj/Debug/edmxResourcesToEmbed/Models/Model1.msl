@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FluxoDeCaixaModelStoreContainer" CdmEntityContainer="fluxo_caixaEntities">
+    <EntitySetMapping Name="clientes">
+      <EntityTypeMapping TypeName="FluxoDeCaixaModel.cliente">
+        <MappingFragment StoreEntitySet="cliente">
+          <ScalarProperty Name="clienteid" ColumnName="clienteid" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="cpf" ColumnName="cpf" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="despesas">
+      <EntityTypeMapping TypeName="FluxoDeCaixaModel.despesa">
+        <MappingFragment StoreEntitySet="despesa">
+          <ScalarProperty Name="despesaid" ColumnName="despesaid" />
+          <ScalarProperty Name="descrição" ColumnName="descrição" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fluxodecaixas">
+      <EntityTypeMapping TypeName="FluxoDeCaixaModel.fluxodecaixa">
+        <MappingFragment StoreEntitySet="fluxodecaixa">
+          <ScalarProperty Name="fluxodecaixaid" ColumnName="fluxodecaixaid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="qtd" ColumnName="qtd" />
+          <ScalarProperty Name="valorproduto" ColumnName="valorproduto" />
+          <ScalarProperty Name="tipodemovimento" ColumnName="tipodemovimento" />
+          <ScalarProperty Name="despesaid" ColumnName="despesaid" />
+          <ScalarProperty Name="fornecedorid" ColumnName="fornecedorid" />
+          <ScalarProperty Name="produtoid" ColumnName="produtoid" />
+          <ScalarProperty Name="clienteid" ColumnName="clienteid" />
+          <ScalarProperty Name="tipodelancamentoid" ColumnName="tipodelancamentoid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fornecedors">
+      <EntityTypeMapping TypeName="FluxoDeCaixaModel.fornecedor">
+        <MappingFragment StoreEntitySet="fornecedor">
+          <ScalarProperty Name="fornecedorid" ColumnName="fornecedorid" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="produtoes">
+      <EntityTypeMapping TypeName="FluxoDeCaixaModel.produto">
+        <MappingFragment StoreEntitySet="produto">
+          <ScalarProperty Name="produtoid" ColumnName="produtoid" />
+          <ScalarProperty Name="descrição" ColumnName="descrição" />
+          <ScalarProperty Name="unidade" ColumnName="unidade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipodelancamentoes">
+      <EntityTypeMapping TypeName="FluxoDeCaixaModel.tipodelancamento">
+        <MappingFragment StoreEntitySet="tipodelancamento">
+          <ScalarProperty Name="tipodelancamentoid" ColumnName="tipodelancamentoid" />
+          <ScalarProperty Name="nomedotipo" ColumnName="nomedotipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

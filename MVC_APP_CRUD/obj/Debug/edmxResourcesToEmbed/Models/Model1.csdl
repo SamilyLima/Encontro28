@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FluxoDeCaixaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="cliente">
+    <Key>
+      <PropertyRef Name="clienteid" />
+    </Key>
+    <Property Name="clienteid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nome" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="cpf" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="fluxodecaixas" Relationship="Self.FK_fluxodecaixa_cliente" FromRole="cliente" ToRole="fluxodecaixa" />
+  </EntityType>
+  <EntityType Name="despesa">
+    <Key>
+      <PropertyRef Name="despesaid" />
+    </Key>
+    <Property Name="despesaid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descrição" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="fluxodecaixas" Relationship="Self.FK_fluxodecaixa_despesa" FromRole="despesa" ToRole="fluxodecaixa" />
+  </EntityType>
+  <EntityType Name="fluxodecaixa">
+    <Key>
+      <PropertyRef Name="fluxodecaixaid" />
+    </Key>
+    <Property Name="fluxodecaixaid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="data" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="qtd" Type="Double" Nullable="false" />
+    <Property Name="valorproduto" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="tipodemovimento" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="despesaid" Type="Int32" />
+    <Property Name="fornecedorid" Type="Int32" />
+    <Property Name="produtoid" Type="Int32" />
+    <Property Name="clienteid" Type="Int32" />
+    <Property Name="tipodelancamentoid" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="cliente" Relationship="Self.FK_fluxodecaixa_cliente" FromRole="fluxodecaixa" ToRole="cliente" />
+    <NavigationProperty Name="despesa" Relationship="Self.FK_fluxodecaixa_despesa" FromRole="fluxodecaixa" ToRole="despesa" />
+    <NavigationProperty Name="fornecedor" Relationship="Self.FK_fluxodecaixa_fornecedor" FromRole="fluxodecaixa" ToRole="fornecedor" />
+    <NavigationProperty Name="produto" Relationship="Self.FK_fluxodecaixa_produto" FromRole="fluxodecaixa" ToRole="produto" />
+    <NavigationProperty Name="tipodelancamento" Relationship="Self.FK_fluxodecaixa_tipodelancamento" FromRole="fluxodecaixa" ToRole="tipodelancamento" />
+  </EntityType>
+  <EntityType Name="fornecedor">
+    <Key>
+      <PropertyRef Name="fornecedorid" />
+    </Key>
+    <Property Name="fornecedorid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nome" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="fluxodecaixas" Relationship="Self.FK_fluxodecaixa_fornecedor" FromRole="fornecedor" ToRole="fluxodecaixa" />
+  </EntityType>
+  <EntityType Name="produto">
+    <Key>
+      <PropertyRef Name="produtoid" />
+    </Key>
+    <Property Name="produtoid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descrição" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="unidade" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="fluxodecaixas" Relationship="Self.FK_fluxodecaixa_produto" FromRole="produto" ToRole="fluxodecaixa" />
+  </EntityType>
+  <EntityType Name="tipodelancamento">
+    <Key>
+      <PropertyRef Name="tipodelancamentoid" />
+    </Key>
+    <Property Name="tipodelancamentoid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nomedotipo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="fluxodecaixas" Relationship="Self.FK_fluxodecaixa_tipodelancamento" FromRole="tipodelancamento" ToRole="fluxodecaixa" />
+    <NavigationProperty Name="tipodelancamento1" Relationship="Self.FK_tipodelancamento_tipodelancamento" FromRole="tipodelancamento" ToRole="tipodelancamento1" />
+    <NavigationProperty Name="tipodelancamento2" Relationship="Self.FK_tipodelancamento_tipodelancamento" FromRole="tipodelancamento1" ToRole="tipodelancamento" />
+  </EntityType>
+  <Association Name="FK_fluxodecaixa_cliente">
+    <End Role="cliente" Type="Self.cliente" Multiplicity="0..1" />
+    <End Role="fluxodecaixa" Type="Self.fluxodecaixa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cliente">
+        <PropertyRef Name="clienteid" />
+      </Principal>
+      <Dependent Role="fluxodecaixa">
+        <PropertyRef Name="clienteid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_fluxodecaixa_despesa">
+    <End Role="despesa" Type="Self.despesa" Multiplicity="0..1" />
+    <End Role="fluxodecaixa" Type="Self.fluxodecaixa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="despesa">
+        <PropertyRef Name="despesaid" />
+      </Principal>
+      <Dependent Role="fluxodecaixa">
+        <PropertyRef Name="despesaid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_fluxodecaixa_fornecedor">
+    <End Role="fornecedor" Type="Self.fornecedor" Multiplicity="0..1" />
+    <End Role="fluxodecaixa" Type="Self.fluxodecaixa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="fornecedor">
+        <PropertyRef Name="fornecedorid" />
+      </Principal>
+      <Dependent Role="fluxodecaixa">
+        <PropertyRef Name="fornecedorid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_fluxodecaixa_produto">
+    <End Role="produto" Type="Self.produto" Multiplicity="0..1" />
+    <End Role="fluxodecaixa" Type="Self.fluxodecaixa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="produto">
+        <PropertyRef Name="produtoid" />
+      </Principal>
+      <Dependent Role="fluxodecaixa">
+        <PropertyRef Name="produtoid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_fluxodecaixa_tipodelancamento">
+    <End Role="tipodelancamento" Type="Self.tipodelancamento" Multiplicity="1" />
+    <End Role="fluxodecaixa" Type="Self.fluxodecaixa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipodelancamento">
+        <PropertyRef Name="tipodelancamentoid" />
+      </Principal>
+      <Dependent Role="fluxodecaixa">
+        <PropertyRef Name="tipodelancamentoid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tipodelancamento_tipodelancamento">
+    <End Role="tipodelancamento" Type="Self.tipodelancamento" Multiplicity="1" />
+    <End Role="tipodelancamento1" Type="Self.tipodelancamento" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tipodelancamento">
+        <PropertyRef Name="tipodelancamentoid" />
+      </Principal>
+      <Dependent Role="tipodelancamento1">
+        <PropertyRef Name="tipodelancamentoid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="fluxo_caixaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="clientes" EntityType="Self.cliente" />
+    <EntitySet Name="despesas" EntityType="Self.despesa" />
+    <EntitySet Name="fluxodecaixas" EntityType="Self.fluxodecaixa" />
+    <EntitySet Name="fornecedors" EntityType="Self.fornecedor" />
+    <EntitySet Name="produtoes" EntityType="Self.produto" />
+    <EntitySet Name="tipodelancamentoes" EntityType="Self.tipodelancamento" />
+    <AssociationSet Name="FK_fluxodecaixa_cliente" Association="Self.FK_fluxodecaixa_cliente">
+      <End Role="cliente" EntitySet="clientes" />
+      <End Role="fluxodecaixa" EntitySet="fluxodecaixas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_fluxodecaixa_despesa" Association="Self.FK_fluxodecaixa_despesa">
+      <End Role="despesa" EntitySet="despesas" />
+      <End Role="fluxodecaixa" EntitySet="fluxodecaixas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_fluxodecaixa_fornecedor" Association="Self.FK_fluxodecaixa_fornecedor">
+      <End Role="fornecedor" EntitySet="fornecedors" />
+      <End Role="fluxodecaixa" EntitySet="fluxodecaixas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_fluxodecaixa_produto" Association="Self.FK_fluxodecaixa_produto">
+      <End Role="produto" EntitySet="produtoes" />
+      <End Role="fluxodecaixa" EntitySet="fluxodecaixas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_fluxodecaixa_tipodelancamento" Association="Self.FK_fluxodecaixa_tipodelancamento">
+      <End Role="tipodelancamento" EntitySet="tipodelancamentoes" />
+      <End Role="fluxodecaixa" EntitySet="fluxodecaixas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tipodelancamento_tipodelancamento" Association="Self.FK_tipodelancamento_tipodelancamento">
+      <End Role="tipodelancamento" EntitySet="tipodelancamentoes" />
+      <End Role="tipodelancamento1" EntitySet="tipodelancamentoes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

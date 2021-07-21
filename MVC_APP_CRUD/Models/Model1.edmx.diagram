@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="df8445465a42424da9d70cea7b874068" Name="Diagram1">
+        <EntityTypeShape EntityType="FluxoDeCaixaModel.cliente" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FluxoDeCaixaModel.despesa" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FluxoDeCaixaModel.fluxodecaixa" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="FluxoDeCaixaModel.fornecedor" Width="1.5" PointX="6.125" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FluxoDeCaixaModel.produto" Width="1.5" PointX="7" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FluxoDeCaixaModel.tipodelancamento" Width="1.5" PointX="3.5" PointY="6.5" IsExpanded="true" />
+        <AssociationConnector Association="FluxoDeCaixaModel.FK_fluxodecaixa_cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="FluxoDeCaixaModel.FK_fluxodecaixa_despesa" ManuallyRouted="false" />
+        <AssociationConnector Association="FluxoDeCaixaModel.FK_fluxodecaixa_fornecedor" ManuallyRouted="false" />
+        <AssociationConnector Association="FluxoDeCaixaModel.FK_fluxodecaixa_produto" ManuallyRouted="false" />
+        <AssociationConnector Association="FluxoDeCaixaModel.FK_fluxodecaixa_tipodelancamento" ManuallyRouted="false" />
+        <AssociationConnector Association="FluxoDeCaixaModel.FK_tipodelancamento_tipodelancamento" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
