@@ -1,0 +1,7 @@
+C:\Users\LAB05\source\repos\AprendendoCSharp\3-CriandoFloat\bin\Debug\3-CriandoFloat.exe.config
+C:\Users\LAB05\source\repos\AprendendoCSharp\3-CriandoFloat\bin\Debug\3-CriandoFloat.exe
+C:\Users\LAB05\source\repos\AprendendoCSharp\3-CriandoFloat\bin\Debug\3-CriandoFloat.pdb
+C:\Users\LAB05\source\repos\AprendendoCSharp\3-CriandoFloat\obj\Debug\3-CriandoFloat.csproj.CoreCompileInputs.cache
+C:\Users\LAB05\source\repos\AprendendoCSharp\3-CriandoFloat\obj\Debug\3-CriandoFloat.exe
+C:\Users\LAB05\source\repos\AprendendoCSharp\3-CriandoFloat\obj\Debug\3-CriandoFloat.pdb
+C:\Users\LAB05\source\repos\AprendendoCSharp\3-CriandoFloat\obj\Debug\3-CriandoFloat.csproj.AssemblyReference.cache

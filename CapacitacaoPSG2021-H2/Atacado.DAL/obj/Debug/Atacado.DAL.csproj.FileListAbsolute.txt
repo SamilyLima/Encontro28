@@ -1,0 +1,12 @@
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Atacado.DAL\bin\Debug\Atacado.DAL.dll.config
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Atacado.DAL\bin\Debug\Atacado.DAL.dll
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Atacado.DAL\bin\Debug\Atacado.DAL.pdb
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Atacado.DAL\bin\Debug\EntityFramework.dll
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Atacado.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Atacado.DAL\bin\Debug\EntityFramework.xml
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Atacado.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Atacado.DAL\obj\Debug\Atacado.DAL.csproj.AssemblyReference.cache
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Atacado.DAL\obj\Debug\Atacado.DAL.csproj.CoreCompileInputs.cache
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Atacado.DAL\obj\Debug\Atacado.DAL.csproj.CopyComplete
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Atacado.DAL\obj\Debug\Atacado.DAL.dll
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Atacado.DAL\obj\Debug\Atacado.DAL.pdb

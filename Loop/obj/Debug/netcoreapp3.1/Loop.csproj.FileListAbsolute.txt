@@ -1,0 +1,13 @@
+C:\Users\LAB05\source\repos\Loop\bin\Debug\netcoreapp3.1\Loop.exe
+C:\Users\LAB05\source\repos\Loop\bin\Debug\netcoreapp3.1\Loop.deps.json
+C:\Users\LAB05\source\repos\Loop\bin\Debug\netcoreapp3.1\Loop.runtimeconfig.json
+C:\Users\LAB05\source\repos\Loop\bin\Debug\netcoreapp3.1\Loop.runtimeconfig.dev.json
+C:\Users\LAB05\source\repos\Loop\bin\Debug\netcoreapp3.1\Loop.dll
+C:\Users\LAB05\source\repos\Loop\bin\Debug\netcoreapp3.1\Loop.pdb
+C:\Users\LAB05\source\repos\Loop\obj\Debug\netcoreapp3.1\Loop.csproj.AssemblyReference.cache
+C:\Users\LAB05\source\repos\Loop\obj\Debug\netcoreapp3.1\Loop.AssemblyInfoInputs.cache
+C:\Users\LAB05\source\repos\Loop\obj\Debug\netcoreapp3.1\Loop.AssemblyInfo.cs
+C:\Users\LAB05\source\repos\Loop\obj\Debug\netcoreapp3.1\Loop.csproj.CoreCompileInputs.cache
+C:\Users\LAB05\source\repos\Loop\obj\Debug\netcoreapp3.1\Loop.dll
+C:\Users\LAB05\source\repos\Loop\obj\Debug\netcoreapp3.1\Loop.pdb
+C:\Users\LAB05\source\repos\Loop\obj\Debug\netcoreapp3.1\Loop.genruntimeconfig.cache

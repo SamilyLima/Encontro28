@@ -1,0 +1,13 @@
+C:\Users\LAB05\source\repos\inicio\bin\Debug\netcoreapp3.1\inicio.exe
+C:\Users\LAB05\source\repos\inicio\bin\Debug\netcoreapp3.1\inicio.deps.json
+C:\Users\LAB05\source\repos\inicio\bin\Debug\netcoreapp3.1\inicio.runtimeconfig.json
+C:\Users\LAB05\source\repos\inicio\bin\Debug\netcoreapp3.1\inicio.runtimeconfig.dev.json
+C:\Users\LAB05\source\repos\inicio\bin\Debug\netcoreapp3.1\inicio.dll
+C:\Users\LAB05\source\repos\inicio\bin\Debug\netcoreapp3.1\inicio.pdb
+C:\Users\LAB05\source\repos\inicio\obj\Debug\netcoreapp3.1\inicio.csproj.AssemblyReference.cache
+C:\Users\LAB05\source\repos\inicio\obj\Debug\netcoreapp3.1\inicio.AssemblyInfoInputs.cache
+C:\Users\LAB05\source\repos\inicio\obj\Debug\netcoreapp3.1\inicio.AssemblyInfo.cs
+C:\Users\LAB05\source\repos\inicio\obj\Debug\netcoreapp3.1\inicio.csproj.CoreCompileInputs.cache
+C:\Users\LAB05\source\repos\inicio\obj\Debug\netcoreapp3.1\inicio.dll
+C:\Users\LAB05\source\repos\inicio\obj\Debug\netcoreapp3.1\inicio.pdb
+C:\Users\LAB05\source\repos\inicio\obj\Debug\netcoreapp3.1\inicio.genruntimeconfig.cache

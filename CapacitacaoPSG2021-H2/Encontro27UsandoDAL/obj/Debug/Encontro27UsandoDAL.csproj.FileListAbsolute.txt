@@ -1,0 +1,15 @@
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Encontro27UsandoDAL\obj\Debug\Encontro27UsandoDAL.csproj.AssemblyReference.cache
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Encontro27UsandoDAL\obj\Debug\Encontro27UsandoDAL.csproj.CoreCompileInputs.cache
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Encontro27UsandoDAL\bin\Debug\Encontro27UsandoDAL.exe.config
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Encontro27UsandoDAL\bin\Debug\Encontro27UsandoDAL.exe
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Encontro27UsandoDAL\bin\Debug\Encontro27UsandoDAL.pdb
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Encontro27UsandoDAL\bin\Debug\Atacado.DAL.dll
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Encontro27UsandoDAL\bin\Debug\EntityFramework.dll
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Encontro27UsandoDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Encontro27UsandoDAL\bin\Debug\Atacado.DAL.pdb
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Encontro27UsandoDAL\bin\Debug\Atacado.DAL.dll.config
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Encontro27UsandoDAL\bin\Debug\EntityFramework.xml
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Encontro27UsandoDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Encontro27UsandoDAL\obj\Debug\Encontro27UsandoDAL.csproj.CopyComplete
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Encontro27UsandoDAL\obj\Debug\Encontro27UsandoDAL.exe
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Encontro27UsandoDAL\obj\Debug\Encontro27UsandoDAL.pdb

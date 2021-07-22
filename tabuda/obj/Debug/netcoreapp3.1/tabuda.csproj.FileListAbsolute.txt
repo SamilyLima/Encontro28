@@ -1,0 +1,4 @@
+C:\Users\LAB05\source\repos\tabuda\obj\Debug\netcoreapp3.1\tabuda.csproj.AssemblyReference.cache
+C:\Users\LAB05\source\repos\tabuda\obj\Debug\netcoreapp3.1\tabuda.AssemblyInfoInputs.cache
+C:\Users\LAB05\source\repos\tabuda\obj\Debug\netcoreapp3.1\tabuda.AssemblyInfo.cs
+C:\Users\LAB05\source\repos\tabuda\obj\Debug\netcoreapp3.1\tabuda.csproj.CoreCompileInputs.cache

@@ -1,0 +1,6 @@
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Atacado.POCO\bin\Debug\Atacado.POCO.dll
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Atacado.POCO\bin\Debug\Atacado.POCO.pdb
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Atacado.POCO\obj\Debug\Atacado.POCO.csproj.AssemblyReference.cache
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Atacado.POCO\obj\Debug\Atacado.POCO.csproj.CoreCompileInputs.cache
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Atacado.POCO\obj\Debug\Atacado.POCO.dll
+C:\Users\LAB05\source\repos\CapacitacaoPSG2021-H2\Atacado.POCO\obj\Debug\Atacado.POCO.pdb
